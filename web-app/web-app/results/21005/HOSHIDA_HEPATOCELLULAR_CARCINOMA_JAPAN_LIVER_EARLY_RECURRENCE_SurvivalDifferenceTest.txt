@@ -1,0 +1,11 @@
+#  log-rank (Cox-Mantel-Haenzel) test
+
+Call:
+survdiff(formula = Surv(time, status) ~ cls, data = surv.data, 
+    rho = test.type)
+
+       N Observed Expected (O-E)^2/E (O-E)^2/V
+cls=1 35       17     14.9     0.308     0.536
+cls=2 47       18     20.1     0.227     0.536
+
+ Chisq= 0.5  on 1 degrees of freedom, p= 0.464 

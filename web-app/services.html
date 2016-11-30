@@ -1,0 +1,183 @@
+
+<!-- saved from url=(0033)http://127.0.0.1:8080/gp/services -->
+<html><script type="application/javascript">(function inject() {
+	(function () {
+		function overrideNotificationBehavior(window) {
+			if (!window.webkitNotifications.originalCreateNotification) {
+				window.webkitNotifications.originalCreateNotification = window.webkitNotifications.createNotification;
+
+				window.webkitNotifications.createNotification = function (iconUrl, title, body) {
+					var n = window.webkitNotifications.originalCreateNotification(iconUrl, title, body);
+					n.show = function () {
+						ChromeGrowl.notify(title, body, iconUrl);
+					}
+					return n;
+				}
+			}
+		}
+
+		function handleFrames() {
+			overrideNotificationBehavior(window);
+			if (window.frames && window.frames.length > 0) {
+				for (var i = 0; i < window.frames.length; i++) {
+					overrideNotificationBehavior(window.frames[i]);
+				}
+			}
+		}
+		handleFrames();
+		window.addEventListener("DOMSubtreeModified", handleFrames, false);
+
+		var notificationEvent;
+
+		Queue = function () {
+			var queue = [];
+
+			this.ready = false;
+
+			this.enqueue = function (f) {
+				queue.push(f);
+				this.work();
+			}
+
+			this.work = function () {
+				if (this.ready && queue.length > 0) {
+					var f = queue.shift();
+					f();
+					this.work();
+				}
+			}
+		}
+
+		ChromeGrowl = {
+			queue: new Queue(),
+
+			callbackHandler: function (notificationID, action, context, type, timestamp) {
+				var s = "";
+				s += "id: " + notificationID + "\r\n";
+				s += "action: " + action + "\r\n";
+				s += "context: " + context + "\r\n";
+				s += "type: " + type + "\r\n";
+				s += "timestamp: " + timestamp + "\r\n";
+				alert(s);
+			},
+
+			errorHandler: function (errorCode, errorDescription) {
+				alert("ERROR:\r\n\r\n" + errorCode + " - " + errorDescription);
+			},
+
+			okHandler: function () {
+
+			},
+
+			notify: function (title, text, icon) {
+				ChromeGrowl.queue.enqueue(function () {
+					var data = {
+						"title": title,
+						"text": text,
+						"icon": icon
+					}
+
+					if (!notificationEvent) {
+						notificationEvent = document.createEvent("Event");
+						notificationEvent.initEvent("NotificationEvent", true, false);
+					}
+
+					document.documentElement.setAttribute("data", JSON.stringify(data));
+					document.documentElement.dispatchEvent(notificationEvent);
+				});
+			},
+
+			init: function () {
+				ChromeGrowl.queue.ready = true;
+				ChromeGrowl.queue.work();
+			}
+		};
+
+		// wait until the document is ready before initializing the Growl stuff
+		window.addEventListener("DOMContentLoaded", ChromeGrowl.init, false);
+	} ());
+})();</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div style="position: fixed; top: 0px; left: 0px; height: 0px; width: 0px; z-index: 9999999; "><div style="position: fixed; top: 100%; height: 0px; "><div style="position: relative; "></div></div></div><h2>And now... Some Services</h2>
+<ul>
+<li>Analysis <a href="http://127.0.0.1:8080/gp/services/Analysis?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>getChildren
+</li><li>getTasks
+</li><li>terminateJob
+</li><li>deleteJob
+</li><li>getJobs
+</li><li>getJobs
+</li><li>getJobs
+</li><li>createProvenancePipeline
+</li><li>createProvenancePipeline
+</li><li>deleteJobResultFile
+</li><li>getJobsInGroup
+</li><li>recordClientJob
+</li><li>recordClientJob
+</li><li>setJobStatus
+</li><li>checkStatus
+</li><li>submitJob
+</li><li>submitJob
+</li><li>findJobsThatCreatedFile
+</li><li>getChildJobInfos
+</li><li>getJob
+</li><li>getResultFiles
+</li><li>getResultFiles
+</li><li>purgeJob
+</li><li>getWebServiceName
+</li><li>getWebServiceInfo
+</li><li>setEncodingScheme
+</li><li>getEncodingScheme
+</li><li>getEncodingSchemeVersion
+</li><li>setEncodingSchemeVersion
+</li><li>ping
+</li></ul>
+<li>AdminService <a href="http://127.0.0.1:8080/gp/services/AdminService?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>AdminService
+</li></ul>
+<li>TaskIntegrator <a href="http://127.0.0.1:8080/gp/services/TaskIntegrator?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>checkPermission
+</li><li>delete
+</li><li>getSupportFiles
+</li><li>getSupportFiles
+</li><li>deleteTask
+</li><li>cloneTask
+</li><li>deleteFiles
+</li><li>exportSuiteToZip
+</li><li>exportToZip
+</li><li>exportToZip
+</li><li>getDocFileNames
+</li><li>getLastModificationTimes
+</li><li>getSupportFileNames
+</li><li>importZip
+</li><li>importZipFromURL
+</li><li>importZipFromURL
+</li><li>getPermittedAccessId
+</li><li>installTask
+</li><li>modifySuite
+</li><li>modifyTask
+</li><li>filenameFromURL
+</li></ul>
+<li>Version <a href="http://127.0.0.1:8080/gp/services/Version?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>getVersion
+</li></ul>
+<li>Admin <a href="http://127.0.0.1:8080/gp/services/Admin?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>getTask
+</li><li>getLatestTasks
+</li><li>getSuite
+</li><li>getAllSuites
+</li><li>getAllTasks
+</li><li>getLatestTasksByName
+</li><li>getLatestSuites
+</li><li>getSuiteMembership
+</li><li>getServiceInfo
+</li><li>getServerLog
+</li><li>getGenePatternLog
+</li><li>getSuiteLsidToVersionsMap
+</li><li>getLSIDToVersionsMap
+</li></ul>
+</ul>
+</body><link rel="stylesheet" type="text/css" href="data:text/css,"></html>

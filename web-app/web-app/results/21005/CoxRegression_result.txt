@@ -1,0 +1,21 @@
+# Cox regression results
+
+tie data handling:  Efron approximation
+variable selection:  none
+
+Call:
+coxph(formula = Surv(time, status) ~ factor(cls), data = surv.data, 
+    method = "efron", robust = F)
+
+  n= 82 
+               coef exp(coef) se(coef)     z    p
+factor(cls)2 -0.247     0.781    0.338 -0.73 0.47
+
+             exp(coef) exp(-coef) lower .95 upper .95
+factor(cls)2     0.781       1.28     0.402      1.52
+
+Rsquare= 0.006   (max possible= 0.971 )
+Likelihood ratio test= 0.53  on 1 df,   p=0.466
+Wald test            = 0.53  on 1 df,   p=0.465
+Score (logrank) test = 0.54  on 1 df,   p=0.464
+

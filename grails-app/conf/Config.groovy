@@ -120,6 +120,7 @@ grails.plugins.springsecurity.userLookup.userDomainClassName = 'org.broadinstitu
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'org.broadinstitute.cancer.clinout.domain.UserRole'
 grails.plugins.springsecurity.authority.className = 'org.broadinstitute.cancer.clinout.domain.Role'
 grails.plugins.springsecurity.logout.afterLogoutUrl = "/"
+grails.plugins.springsecurity.failureHandler.defaultFailureUrl = '/login/auth'
 //grails.plugins.springsecurity.securityConfigType = SecurityConfigType.Requestmap
 grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
 grails.plugins.springsecurity.interceptUrlMap = [
@@ -130,10 +131,10 @@ grails.plugins.springsecurity.interceptUrlMap = [
    '/dataset/**':['ROLE_USER','ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
    '/results/**':['ROLE_USER','ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
    '/signature/**':['ROLE_USER','ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
-   '/user/**':['ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
-   '/requestmap/**':['ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
-   '/role/**':['ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
-   '/admin/**':['ROLE_ADMIN','IS_AUTHENTICATED_FULLY']	
+   '/user/**':['ROLE_USER','ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
+   '/requestmap/**':['ROLE_USER','ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
+   '/role/**':['ROLE_USER','ROLE_ADMIN','IS_AUTHENTICATED_FULLY'],
+   '/admin/**':['ROLE_ADMIN','IS_AUTHENTICATED_FULLY']
 ]
 // log4j configuration
 log4j = {
@@ -150,7 +151,8 @@ log4j = {
 	}
 
 	debug 'grails.app.services.grails.plugins.springsecurity.ui.SpringSecurityUiService'
-
+	debug 'org.springframework.security'
+	
 //    trace 'org.broadinstitute.cancer.clinout.controllers.LoginController'
 
 	error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
@@ -214,25 +216,11 @@ grails.plugins.appinfo.additional = [
    ]
 ]
 
-environments {
-    production {
-        fs.path = "./web-app"
-    }
-    development {
-        fs.path = "./web-app"
-    }
-}
-
-admin.security.login = "collab"
-admin.security.password = "collab"
-admin.security.enabled = false
-
 google.analytics.enabled = true
 google.analytics.webPropertyID = "UA-33851510-1"
 
 grails.validateable.classes = [
-    org.broadinstitute.cancer.clinout.controllers.SubmitCommand,
-    grails.plugins.springsecurity.ui.RegisterCommand
+    org.broadinstitute.cancer.clinout.controllers.SubmitCommand
 ]
 
 //grails.plugins.springsecurity.onInteractiveAuthenticationSuccessEvent = { e, appCtx ->
@@ -245,7 +233,7 @@ grails.validateable.classes = [
 //    }
 //}
 
-grails.plugins.springsecurity.ui.encodePassword = true
+grails.plugins.springsecurity.ui.encodePassword = false
 
 //grails.war.dependencies = [
 //    'GenePattern.jar'

@@ -95,8 +95,8 @@
       </table>
     </div>
     <h3>Heatmap</h3>
-      <a class="lightbox" href="/results/${map.jobNumber}/NTP_heatmp.png">
-        <img src="/results/${map.jobNumber}/NTP_heatmp.png" alt="Heat Map (png)" />
+      <a class="lightbox" title="Heatmap" href="/web-app/results/${map.jobNumber}/NTP_heatmap.png">
+        <img width="400" height="400" src="/web-app/results/${map.jobNumber}/NTP_heatmap.png" />
       </a>
     <p class=""><span style="color: red;">Red: Class 1</span>, <span style="color: blue">Blue: Class 2</span></p>
     <br /><br />

@@ -12,9 +12,9 @@ import org.codehaus.groovy.grails.commons.ApplicationHolder
 
 class GenePatternService {
 
-    static final SERVER_ADDRESS = "http://ec2-54-172-250-10.compute-1.amazonaws.com:8080/gp/"
+    static final SERVER_ADDRESS = "http://ec2-54-164-57-77.compute-1.amazonaws.com:8080/gp/"
     static final USERNAME = "shunyip@bu.edu"
-    static final PASSWORD = "kenpassword"
+    static final PASSWORD = "ken1password"
 
     static client = new GPClient(SERVER_ADDRESS, USERNAME, PASSWORD)
     static proxy = new AnalysisWebServiceProxy(SERVER_ADDRESS, USERNAME, PASSWORD)
@@ -230,7 +230,7 @@ class GenePatternService {
         def logisticRegressionResult  = client.createJobResult children[1]
         def twoByTwoResult            = client.createJobResult children[2]
 
-        def files = [:], destination = "$Resultspath/results/${job}"
+        def files = [:], destination = "$Resultspath/${job}"
 		
         files.heatmap            = NTPrediction.downloadFile "NTP_heatmap.png", destination
         files.logisticRegression = logisticRegressionResult.downloadFile "LogisticRegression_result.txt", destination

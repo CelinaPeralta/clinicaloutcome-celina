@@ -19,10 +19,14 @@ class UrlMappings {
         
         
 //        "/"(view:"landing")
-
-//        "403"(controller: "errors", action: "accessDenied")
-//        "404"(controller: "errors", action: "notFound")
-//        "405"(controller: "errors", action: "notAllowed")
-//        "500"(controller: "errors", action: "error")
+		"403"(controller: "errors", action: "auth")
+		"404"(controller: "errors", action: "auth")
+		"405"(controller: "errors", action: "auth")
+		"500"(controller: "errors", action: "auth")
+		
+//        "403"(controller: "errors", action: "auth")
+//        "404"(controller: "errors", action: "auth")
+//        "405"(controller: "errors", action: "auth")
+//        "500"(controller: "errors", action: "auth")
     }
 }

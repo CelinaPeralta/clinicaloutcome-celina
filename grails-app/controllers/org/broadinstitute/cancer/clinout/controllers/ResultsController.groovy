@@ -55,48 +55,20 @@ class ResultsController {
         def survivalDifferenceLines = session.files.survivalDifference.readLines()
         def coxRegressionLines = session.files.coxRegression.readLines()
 		
-		int index = 0
-		int index1 = 0
-		while (true) {
-			String[] splitArray = survivalDifferenceLines[index1].split("\\s+")
-			if (splitArray[0] == "cls=0") {
-				index = index1
-			}
-			if (splitArray[0] == "cls=1") {
-				break
-			}
-			index1++
-		}
-
-		int index2 = 0
-		int index3 = 0
-		int match = 0
-		while (true) {
-			String[] splitArray = coxRegressionLines[index3].split("\\s+")
-			if (splitArray[0] == "factor(cls)1") {
-				if (match == 0) {
-					index2 = index3
-					match = match + 1
-				} else {
-					break
-				}
-			}
-			index3++
-		}
 		
-        map.survivalDifferenceLine1 = survivalDifferenceLines[index]
+        map.survivalDifferenceLine1 = survivalDifferenceLines[7]
 		//println "1"
 		//println survivalDifferenceLines[7]
-        map.survivalDifferenceLine2 = survivalDifferenceLines[index1]
+        map.survivalDifferenceLine2 = survivalDifferenceLines[8]
 		//println "2"
 		//println survivalDifferenceLines[8]
-        map.survivalDifferenceLine3 = survivalDifferenceLines[index1+2]
+        map.survivalDifferenceLine3 = survivalDifferenceLines[10]
 		//println "3"
 		//println survivalDifferenceLines[10]
-        map.coxRegressionLine1      = coxRegressionLines[index2]
+        map.coxRegressionLine1      = coxRegressionLines[12]
 		//println "4"
 		//println coxRegressionLines[12]
-        map.coxRegressionLine2      = coxRegressionLines[index3]
+        map.coxRegressionLine2      = coxRegressionLines[17]
 		//println "5"
 		//println coxRegressionLines[17]
         map.jobNumber               = session.job

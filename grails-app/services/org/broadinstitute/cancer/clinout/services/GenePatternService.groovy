@@ -8,7 +8,7 @@ import org.genepattern.webservice.WebServiceException
 import org.genepattern.webservice.WebServiceErrorMessageException
 import org.genepattern.webservice.UnavailableException
 import org.broadinstitute.cancer.clinout.domain.MetaDataset
-import org.codehaus.groovy.grails.commons.ApplicationHolder
+import grails.util.Holders
 
 class GenePatternService {
 
@@ -55,7 +55,7 @@ class GenePatternService {
      * @retrun
      */
     def getError(int job) { 
-		File resultsfolder = ApplicationHolder.application.parentContext.getResource("web-app/results").file
+		File resultsfolder = Holders.grailsApplication.parentContext.getResource("web-app/results").file
 		def Resultspath = resultsfolder.absolutePath
         
         def destination = "$Resultspath/${job}"
@@ -124,9 +124,9 @@ class GenePatternService {
      * @return JobResult
      */
     def runTimeToEventAnalysis(String dataset, String signature) {
-		File uploadsfolder = ApplicationHolder.application.parentContext.getResource("web-app/uploads").file
+		File uploadsfolder = Holders.grailsApplication.parentContext.getResource("web-app/uploads").file
 		def UL = uploadsfolder.absolutePath
-		File databasefolder = ApplicationHolder.application.parentContext.getResource("web-app/database").file
+		File databasefolder = Holders.grailsApplication.parentContext.getResource("web-app/database").file
 		def DB = databasefolder.absolutePath
 
 		
@@ -149,9 +149,9 @@ class GenePatternService {
      * @retrun
      */
     def binaryAnalysis(String dataset, String signature) {
-        File uploadsfolder = ApplicationHolder.application.parentContext.getResource("web-app/uploads").file
+        File uploadsfolder = Holders.grailsApplication.parentContext.getResource("web-app/uploads").file
 		def UL = uploadsfolder.absolutePath
-		File databasefolder = ApplicationHolder.application.parentContext.getResource("web-app/database").file
+		File databasefolder = Holders.grailsApplication.parentContext.getResource("web-app/database").file
 		def DB = databasefolder.absolutePath
 
 		
@@ -189,7 +189,7 @@ class GenePatternService {
      */
     def downloadTimeToEventResults(int job, String dataset) {
 		println "Downloading Results..."
-        File resultsfolder = ApplicationHolder.application.parentContext.getResource("web-app/results").file
+        File resultsfolder = Holders.grailsApplication.parentContext.getResource("web-app/results").file
 		def Resultspath = resultsfolder.absolutePath
 
         def children                  = proxy.getChildren job
@@ -221,7 +221,7 @@ class GenePatternService {
      */
     def downloadBinaryResults(int job, String dataset) {
 		println "Downloading Results..."
-        File resultsfolder = ApplicationHolder.application.parentContext.getResource("web-app/results").file
+        File resultsfolder = Holders.grailsApplication.parentContext.getResource("web-app/results").file
 		def Resultspath = resultsfolder.absolutePath
 
         def children                  = proxy.getChildren job
@@ -248,7 +248,7 @@ class GenePatternService {
      * @returns File object representing the error file
      */
     def downloadErrorFile(int job) {
-		File resultsfolder = ApplicationHolder.application.parentContext.getResource("web-app/results").file
+		File resultsfolder = Holders.grailsApplication.parentContext.getResource("web-app/results").file
 		def Resultspath = resultsfolder.absolutePath
 
         def destination = "$Resultspath/results/${job}"

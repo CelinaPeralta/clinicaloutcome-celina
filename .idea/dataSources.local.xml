@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="clinicaloutcome-celina dev" uuid="74f02494-fb27-4128-88bb-8b779da3b29d">
+      <secret-storage>memory</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>atcsdevb_shrusr</user-name>
+    </data-source>
+  </component>
+</project>

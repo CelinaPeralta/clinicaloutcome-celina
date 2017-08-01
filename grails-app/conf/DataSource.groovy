@@ -11,12 +11,12 @@ environments {
     
     development {
 		dataSource {
-		 username = "hoshida"
-		 password = "Hoshidalab_ken"
+		 username = "atcsdevb_shrusr"
+		 password = "EsM1)Q8?4hd~"
 		 pooled = true
 		 dbCreate = "update"
 		 driverClassName = "com.mysql.jdbc.Driver"
-		 url = "jdbc:mysql://aa1sw6lboctyto5.c34ro1ahmqac.us-east-1.rds.amazonaws.com:3306/ebdb?user=hoshida&password=Hoshidalab_ken"
+		 url = "jdbc:mysql://webdev01.bergen.org:3306/atcsdevb_clinicaloutcomes?user=atcsdevb_shrusr&password=EsM1)Q8?4hd~"
 		 dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 		 properties {
 		  validationQuery = "SELECT 1"

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="0" name="MetaDatasetControllerTests" package="org.broadinstitute.cancer.clinout.controllers" tests="1" time="5.6" timestamp="2017-07-26T14:49:49">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.controllers.MetaDatasetControllerTests" name="testSomething" time="5.172">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.controllers.MetaDatasetControllerTests.testSomething(MetaDatasetControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="1" name="QueryControllerTests" package="org.broadinstitute.cancer.clinout.controllers" tests="1" time="0.186" timestamp="2017-07-26T14:49:55">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.controllers.QueryControllerTests" name="testSomething" time="0.174">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.controllers.QueryControllerTests.testSomething(QueryControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="2" name="ResultsControllerTests" package="org.broadinstitute.cancer.clinout.controllers" tests="1" time="0.188" timestamp="2017-07-26T14:49:56">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.controllers.ResultsControllerTests" name="testSomething" time="0.175">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.controllers.ResultsControllerTests.testSomething(ResultsControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="3" name="SignatureControllerTests" package="org.broadinstitute.cancer.clinout.controllers" tests="1" time="0.24" timestamp="2017-07-26T14:49:56">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.controllers.SignatureControllerTests" name="testSomething" time="0.202">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.controllers.SignatureControllerTests.testSomething(SignatureControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="4" name="ClinicalOutcomeDataTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="2.072" timestamp="2017-07-26T14:49:56">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.ClinicalOutcomeDataTests" name="testSomething" time="2.032">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.domain.ClinicalOutcomeDataTests.testSomething(ClinicalOutcomeDataTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="7" failures="1" hostname="HK-C214-07" id="5" name="DatasetControllerTests" package="org.broadinstitute.cancer.clinout.domain" tests="8" time="0.78" timestamp="2017-07-26T14:49:58">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testIndex" time="0.301">
+          <failure message="Assertion failed: &#xa;&#xa;assert &quot;/dataset/list&quot; == response.redirectedUrl&#xa;                       |  |        |&#xa;                       |  |        null&#xa;                       |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@659ac28c&#xa;                       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert &quot;/dataset/list&quot; == response.redirectedUrl
+                       |  |        |
+                       |  |        null
+                       |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@659ac28c
+                       false
+
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testIndex(DatasetControllerTests.groovy:22)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testEdit" time="0.213">
+          <error message="No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.edit() is applicable for argument types: () values: []&#xa;Possible solutions: wait(), wait(long), wait(long, int), print(java.io.PrintWriter), with(groovy.lang.Closure), split(groovy.lang.Closure)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.edit() is applicable for argument types: () values: []
+Possible solutions: wait(), wait(long), wait(long, int), print(java.io.PrintWriter), with(groovy.lang.Closure), split(groovy.lang.Closure)
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testEdit(DatasetControllerTests.groovy:75)
+</error>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testList" time="0.046">
+          <error message="No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.list() is applicable for argument types: () values: []&#xa;Possible solutions: is(java.lang.Object), wait(), find(), wait(long), print(java.io.PrintWriter), with(groovy.lang.Closure)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.list() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), wait(), find(), wait(long), print(java.io.PrintWriter), with(groovy.lang.Closure)
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testList(DatasetControllerTests.groovy:27)
+</error>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testSave" time="0.035">
+          <error message="No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.save() is applicable for argument types: () values: []&#xa;Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), isCase(java.lang.Object), use([Ljava.lang.Object;)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.save() is applicable for argument types: () values: []
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), isCase(java.lang.Object), use([Ljava.lang.Object;)
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testSave(DatasetControllerTests.groovy:40)
+</error>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testShow" time="0.038">
+          <error message="No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.show() is applicable for argument types: () values: []&#xa;Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.show() is applicable for argument types: () values: []
+Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testShow(DatasetControllerTests.groovy:56)
+</error>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testCreate" time="0.036">
+          <error message="No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.create() is applicable for argument types: () values: []&#xa;Possible solutions: treeData(), grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.CharSequence)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.create() is applicable for argument types: () values: []
+Possible solutions: treeData(), grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.CharSequence)
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testCreate(DatasetControllerTests.groovy:34)
+</error>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testDelete" time="0.032">
+          <error message="No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.delete() is applicable for argument types: () values: []&#xa;Possible solutions: select(), select(java.lang.String), sleep(long), sleep(long, groovy.lang.Closure), every(), every(groovy.lang.Closure)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.delete() is applicable for argument types: () values: []
+Possible solutions: select(), select(java.lang.String), sleep(long), sleep(long, groovy.lang.Closure), every(), every(groovy.lang.Closure)
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testDelete(DatasetControllerTests.groovy:140)
+</error>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetControllerTests" name="testUpdate" time="0.033">
+          <error message="No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.update() is applicable for argument types: () values: []&#xa;Possible solutions: putAt(java.lang.String, java.lang.Object), isCase(java.lang.Object), split(groovy.lang.Closure), use([Ljava.lang.Object;), use(java.util.List, groovy.lang.Closure), use(java.lang.Class, groovy.lang.Closure)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: org.broadinstitute.cancer.clinout.controllers.DatasetController.update() is applicable for argument types: () values: []
+Possible solutions: putAt(java.lang.String, java.lang.Object), isCase(java.lang.Object), split(groovy.lang.Closure), use([Ljava.lang.Object;), use(java.util.List, groovy.lang.Closure), use(java.lang.Class, groovy.lang.Closure)
+	at org.broadinstitute.cancer.clinout.domain.DatasetControllerTests.testUpdate(DatasetControllerTests.groovy:94)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testIndex--
+--Output from testEdit--
+--Output from testList--
+--Output from testSave--
+--Output from testShow--
+--Output from testCreate--
+--Output from testDelete--
+--Output from testUpdate--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testIndex--
+--Output from testEdit--
+--Output from testList--
+--Output from testSave--
+--Output from testShow--
+--Output from testCreate--
+--Output from testDelete--
+--Output from testUpdate--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="6" name="DatasetTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="0.085" timestamp="2017-07-26T14:49:59">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.DatasetTests" name="testSomething" time="0.073">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.domain.DatasetTests.testSomething(DatasetTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="7" name="GeneExpressionDataTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="0.197" timestamp="2017-07-26T14:49:59">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.GeneExpressionDataTests" name="testSomething" time="0.172">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.domain.GeneExpressionDataTests.testSomething(GeneExpressionDataTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="HK-C214-07" id="8" name="MetaDatasetControllerTests" package="org.broadinstitute.cancer.clinout.domain" tests="8" time="1.67" timestamp="2017-07-26T14:49:59">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testIndex" time="0.296" />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testEdit" time="0.513">
+          <failure message="Assertion failed: &#xa;&#xa;assert metaDataset.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       org.broadinstitute.cancer.clinout.domain.MetaDataset : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert metaDataset.save() != null
+       |           |      |
+       |           null   false
+       org.broadinstitute.cancer.clinout.domain.MetaDataset : (unsaved)
+
+	at org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests.testEdit(MetaDatasetControllerTests.groovy:84)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testList" time="0.708" />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testSave" time="0.021">
+          <failure message="Assertion failed: &#xa;&#xa;assert model.metaDatasetInstance != null&#xa;       |     |                   |&#xa;       [:]   null                false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert model.metaDatasetInstance != null
+       |     |                   |
+       [:]   null                false
+
+	at org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests.testSave(MetaDatasetControllerTests.groovy:42)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testShow" time="0.035">
+          <failure message="Assertion failed: &#xa;&#xa;assert metaDataset.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       org.broadinstitute.cancer.clinout.domain.MetaDataset : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert metaDataset.save() != null
+       |           |      |
+       |           null   false
+       org.broadinstitute.cancer.clinout.domain.MetaDataset : (unsaved)
+
+	at org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests.testShow(MetaDatasetControllerTests.groovy:65)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testCreate" time="0.017" />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testDelete" time="0.022">
+          <failure message="Assertion failed: &#xa;&#xa;assert flash.message != null&#xa;       |     |       |&#xa;       [:]   null    false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert flash.message != null
+       |     |       |
+       [:]   null    false
+
+	at org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests.testDelete(MetaDatasetControllerTests.groovy:141)
+</failure>
+
+      </testcase>
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests" name="testUpdate" time="0.02">
+          <failure message="Assertion failed: &#xa;&#xa;assert flash.message != null&#xa;       |     |       |&#xa;       [:]   null    false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert flash.message != null
+       |     |       |
+       [:]   null    false
+
+	at org.broadinstitute.cancer.clinout.domain.MetaDatasetControllerTests.testUpdate(MetaDatasetControllerTests.groovy:96)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testIndex--
+--Output from testEdit--
+--Output from testList--
+--Output from testSave--
+--Output from testShow--
+--Output from testCreate--
+--Output from testDelete--
+--Output from testUpdate--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testIndex--
+--Output from testEdit--
+--Output from testList--
+--Output from testSave--
+--Output from testShow--
+--Output from testCreate--
+--Output from testDelete--
+--Output from testUpdate--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="9" name="MetaDatasetTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="0.11" timestamp="2017-07-26T14:50:01">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.MetaDatasetTests" name="testSomething" time="0.098">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.domain.MetaDatasetTests.testSomething(MetaDatasetTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="0" hostname="HK-C214-07" id="10" name="OrganTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="0.059" timestamp="2017-07-26T14:50:01">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.OrganTests" name="testSomething" time="0.053">
+          <error message="Cannot add Domain class [class org.broadinstitute.cancer.clinout.controllers.Organ]. It is not a Domain!" type="org.codehaus.groovy.grails.exceptions.GrailsConfigurationException">org.codehaus.groovy.grails.exceptions.GrailsConfigurationException: Cannot add Domain class [class org.broadinstitute.cancer.clinout.controllers.Organ]. It is not a Domain!
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.registerGrailsDomainClass(DomainClassUnitTestMixin.groovy:167)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomains(DomainClassUnitTestMixin.groovy:83)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:114)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:113)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="11" name="PatientCohortTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="0.123" timestamp="2017-07-26T14:50:01">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.PatientCohortTests" name="testSomething" time="0.111">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.domain.PatientCohortTests.testSomething(PatientCohortTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="12" name="SignatureTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="0.255" timestamp="2017-07-26T14:50:02">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.SignatureTests" name="testSomething" time="0.241">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.domain.SignatureTests.testSomething(SignatureTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="13" name="UserTests" package="org.broadinstitute.cancer.clinout.domain" tests="1" time="0.188" timestamp="2017-07-26T14:50:02">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.domain.UserTests" name="testSomething" time="0.179">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.domain.UserTests.testSomething(UserTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="14" name="AnalysisServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.139" timestamp="2017-07-26T14:50:02">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.AnalysisServiceTests" name="testSomething" time="0.132">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.AnalysisServiceTests.testSomething(AnalysisServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="15" name="DataServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.122" timestamp="2017-07-26T14:50:03">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.DataServiceTests" name="testSomething" time="0.114">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.DataServiceTests.testSomething(DataServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="16" name="DatasetServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.101" timestamp="2017-07-26T14:50:03">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.DatasetServiceTests" name="testSomething" time="0.089">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.DatasetServiceTests.testSomething(DatasetServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="17" name="EventsServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.088" timestamp="2017-07-26T14:50:03">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.EventsServiceTests" name="testSomething" time="0.08">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.EventsServiceTests.testSomething(EventsServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="18" name="GenePatternServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.367" timestamp="2017-07-26T14:50:03">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.GenePatternServiceTests" name="testSomething" time="0.359">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.GenePatternServiceTests.testSomething(GenePatternServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="19" name="MetaDatasetServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.085" timestamp="2017-07-26T14:50:04">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.MetaDatasetServiceTests" name="testSomething" time="0.078">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.MetaDatasetServiceTests.testSomething(MetaDatasetServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="20" name="QueryServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.1" timestamp="2017-07-26T14:50:04">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.QueryServiceTests" name="testSomething" time="0.088">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.QueryServiceTests.testSomething(QueryServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="21" name="SecurityListenerServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.108" timestamp="2017-07-26T14:50:04">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.SecurityListenerServiceTests" name="testSomething" time="0.099">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.SecurityListenerServiceTests.testSomething(SecurityListenerServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="22" name="SignatureServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.124" timestamp="2017-07-26T14:50:04">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.SignatureServiceTests" name="testSomething" time="0.111">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.SignatureServiceTests.testSomething(SignatureServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="HK-C214-07" id="23" name="UserDetailsServiceTests" package="org.broadinstitute.cancer.clinout.services" tests="1" time="0.692" timestamp="2017-07-26T14:50:04">
+      <properties />
+
+      <testcase classname="org.broadinstitute.cancer.clinout.services.UserDetailsServiceTests" name="testSomething" time="0.69">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at org.broadinstitute.cancer.clinout.services.UserDetailsServiceTests.testSomething(UserDetailsServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

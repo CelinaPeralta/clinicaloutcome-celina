@@ -4,7 +4,7 @@ modules = {
 
         dependsOn: 'jquery-ui'
 
-        resource url:[dir: 'themes/classic', file: 'style.css']
+        resource url:[dir: 'css', file: 'style.css']
 
         resource url:[dir: 'css', file: 'jquery.lightbox-0.5.css']
 

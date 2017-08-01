@@ -3,7 +3,7 @@ package org.broadinstitute.cancer.clinout.controllers
 import org.springframework.web.multipart.MultipartHttpServletRequest
 import org.springframework.web.multipart.MultipartFile
 import org.broadinstitute.cancer.clinout.domain.MetaDataset
-import org.codehaus.groovy.grails.commons.ApplicationHolder
+import grails.util.Holders
 
 class SignatureController {
 
@@ -16,7 +16,7 @@ class SignatureController {
     def upload() {}
 
     def sigFile() {
-		File layoutFolder = ApplicationHolder.application.parentContext.getResource("web-app/uploads").file
+		File layoutFolder = Holders.grailsApplication.parentContext.getResource("web-app/uploads").file
         def path = layoutFolder.absolutePath
 
         if (request instanceof MultipartHttpServletRequest) {
@@ -33,7 +33,7 @@ class SignatureController {
     }
 
     def sigText(String class1, String class2) {
-		File layoutFolder = ApplicationHolder.application.parentContext.getResource("web-app/uploads").file
+		File layoutFolder = Holders.grailsApplication.parentContext.getResource("web-app/uploads").file
 
         def path = layoutFolder.absolutePath, name = "${UUID.randomUUID() as String}.txt"
 

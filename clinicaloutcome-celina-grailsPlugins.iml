@@ -165,7 +165,6 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/atmosphere/atmosphere-runtime/1.0.1/atmosphere-runtime-1.0.1.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.0.7.RELEASE/spring-security-web-3.0.7.RELEASE.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.0.7.RELEASE/spring-security-core-3.0.7.RELEASE.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
           <root url="jar://C:/grails/grails-2.4.4/lib/org.springframework/spring-web/jars/spring-web-4.0.7.RELEASE.jar!/" />
           <root url="jar://C:/grails/grails-2.4.4/lib/javax.transaction/jta/jars/jta-1.1.jar!/" />
           <root url="jar://C:/grails/grails-2.4.4/dist/grails-plugin-mimetypes-2.4.4.jar!/" />
